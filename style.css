@@ -1,0 +1,44 @@
+/*.card > div {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 3px;
+}*/
+
+body {
+  background-color: #B5BBBD;
+}
+
+#template {
+  display: none;
+}
+
+#umbrella {
+  display: none;
+}
+
+#imgUmbrella {
+  display: none;
+  width: 200px;
+}
+
+#imgTop {
+  width: 200px;
+}
+
+#imgBottom {
+  width: 200px;
+}
+
+#imgShoes {
+  width: 200px;
+}
+
+#outfitContainer {
+  border: 2px solid #000;
+  background-color: white;
+}
+
+#weatherContainer {
+  border: 2px solid #000;
+  background-color: #BADCE8;
+}

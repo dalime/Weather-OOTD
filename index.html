@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8"></script>
+  <title>Weather OOTD</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Outfit of the Moment</h1>
+    <h4>Don't know what to wear right now? Enter your city and state below to see what we recommend.</h4>
+    <p>*Data is based on current conditions. Not based on today's forecast.</p>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <form class="input-group">
+          <input type="text" id="iptCity" placeholder="City" required>
+          <input type="text" id="iptState" placeholder="State or Country" required>
+          <button class="btn btn-primary" id="btnSubmit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card">
+        <div id="template">
+          <div class="container" id="outfitContainer">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 style="text-decoration: underline" id="outfit">What We Recommend</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <img src="" id="imgTop" />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <img src="" id="imgBottom" />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <img src="" id="imgShoes" />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <img src="../Images/umbrella.jpg" id="imgUmbrella" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4 id="top">Jacket</h4>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4 id="bottom">Jeans</h4>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4 id="shoes">Flip Flops</h4>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h4 id="umbrella">Umbrella</h4>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="weatherContainer">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 style="text-decoration: underline">Weather</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-10 col-lg-11">
+                <h3 id="display_location">Pleasanton, CA</h3>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-1">
+                <h4 id="weather">Partly Cloudy</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-10 col-lg-11">
+                <h4 id="local_time_rfc822">Sun, 30 Jul 2016 10:30:00 -0700</h4>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-1">
+                <img src="" id="icon_url" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h4>Feels Like: <span id="feelslike_string">65 degrees</span></h4>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                  <h5 id="temperature_string">65 F 30 C</h5>
+                </div>
+                <div class="row">
+                  <h5>Humidity: <span id=#relative_humidity>65%</span></h5>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h5>Precpitation Today: <span id="precip_today_string">50%</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
