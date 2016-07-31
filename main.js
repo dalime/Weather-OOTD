@@ -89,7 +89,7 @@ function getWeather(e) {
             $weather.find('#bottom').text("Jeans");
             $weather.find('#imgBottom').attr('src', "../Images/jeans.jpg");
             $weather.find('#shoes').text("Closed-toed Shoes");
-            $weather.find('#imgShoes').attr('src', "../Imges/closed_toed_shoes.jpg");
+            $weather.find('#imgShoes').attr('src', "../Images/closed_toed_shoes.jpg");
           } else if ($feelslike >= 70 && $feelslike <= 80) {
             $weather.find('#top').text("Light Sweater or Long Sleeve");
             $weather.find('#imgTop').attr('src', "../Images/long_sleeve.jpg");
